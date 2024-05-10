@@ -1,1 +1,25 @@
-
+Started by user Mohd faizan
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Todo-Node-App
+The recommended git tool is: NONE
+using credential github.jenkins
+Cloning the remote Git repository
+Cloning repository https://github.com/Azeem911/game.git
+ > git init /var/lib/jenkins/workspace/Todo-Node-App # timeout=10
+Fetching upstream changes from https://github.com/Azeem911/game.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+using GIT_SSH to set credentials This is for jenkins and github integration
+Verifying host key using known hosts file
+You're using 'Known hosts file' strategy to verify ssh host keys, but your known_hosts file does not exist, please go to 'Manage Jenkins' -> 'Security' -> 'Git Host Key Verification Configuration' and configure host key verification.
+ > git fetch --tags --force --progress -- https://github.com/Azeem911/game.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Azeem911/game.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision d508a5a607a9740d256a1e64a1dec1d936bc1266 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d508a5a607a9740d256a1e64a1dec1d936bc1266 # timeout=10
+Commit message: "Update README.md"
+First time build. Skipping changelog.
+Finished: SUCCESS
